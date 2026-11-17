@@ -1,0 +1,71 @@
+---
+# 原稿テンプレート（先生）。content/sensei/<slug>.mdx にコピーして使う
+# - 字数の上限は lib/schema.ts で検査される（超えるとビルドが止まる）
+# - 表現ルール: docs/表現ルール は data/ng-words.ts。npm run lint:content で確認
+# - 否定の文脈で NG ワードを使うときは、同じ行か直前の行に「# ng-ok: 語 理由」
+slug: sei-mei                     # ローマ字。公開後は変えない
+name: 姓 名
+nameKana: せい めい               # ひらがな
+photo:
+  src: /images/sensei/sei-mei.jpg # 縦長 4:5、長辺 1600px 以上
+  alt: ○○さんが施術室で微笑んでいる写真   # 10字以上。写っているものを具体的に
+catchphrase: 一言をここに          # 32字以内。カードと title の主役。本人の言葉から
+types: [shinkyu]                  # seitai / shinkyu（両方なら [shinkyu, seitai]）
+licenses: [はり師, きゅう師]       # 国家資格だけ。data/vocab.ts の LICENSES から
+otherQualifications: []           # 民間資格（40字以内ずつ）
+startedYear: 2015                 # 施術を始めた年。経験年数は自動計算
+clinics:
+  - slug: clinic-slug             # content/clinic/<slug>.yaml が必要
+    role: 院長                    # 院長 / スタッフ / 業務委託
+    # days: 火・木                # 複数の院にいるとき、その院にいる曜日
+compare:
+  why: この仕事を選んだきっかけ（60字以内）
+  belief: いちばん大切にしていること（60字以内）
+  approach: 不調への向き合い方（80字以内）
+  pressure: やさしめ              # やさしめ / 中くらい / しっかり / 相談して決める
+  methods: [手技や道具, 最大6つ]   # 各30字以内
+  talkStyle: 相手に合わせる        # 静かに受けたい人向け / 話しながら / 相手に合わせる
+  explanation: 施術の前後にどう説明するか（60字以内）
+  firstVisit:
+    counselingMin: 30
+    treatmentMin: 40
+  visitPace: 通うペースの考え方（60字以内。回数を約束しない）
+  selfCare: true
+  concerns: [katakori]            # よく受ける相談。data/vocab.ts の CONCERNS から最大5つ
+  notFor: ほかを勧めることがあるケース（80字以内。受診を勧める場面など）
+  # gender: 女性                  # 本人が公開を希望したときだけ
+  price:
+    firstVisit: 6000              # 税込・通常の額。割引額は書かない
+    regular: 5000
+    # note: 補足（60字以内）
+interviewedAt: 2026-01-01
+publishedAt: 2026-01-15
+verifiedAt: 2026-01-10            # 料金・受付時間を確認した日。半年ごとに更新
+interviewer: 聞き手の名前
+# photographer: 撮影者の名前
+listing: free                     # free / paid（paid にすると「掲載プラン利用」と表示）
+draft: true                       # 公開するときに false
+---
+
+{/* 本文は質問シートの順に。Q は聞き手の質問、Quote は本文から抜き出す一文（1記事に1〜2個）。
+    効果を約束する言い方・ほかの院との比較・体験談は書かない。 */}
+
+<Q>この仕事を選んだきっかけを教えてください。</Q>
+
+本文。
+
+<Quote>本文の中から、いちばんその人らしい一文を。</Quote>
+
+<Q>施術で、いちばん大切にしていることは何ですか。</Q>
+
+本文。
+
+<Photo src="/images/interview/sei-mei-01.jpg" alt="写っているものを具体的に" caption="キャプション" />
+
+<Q>初めての人は、どんな流れで施術を受けるのでしょう。</Q>
+
+本文。
+
+<Q>どんな人に来てほしいですか。合わないかもしれない人は。</Q>
+
+本文。

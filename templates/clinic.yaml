@@ -1,0 +1,26 @@
+# 院テンプレート。content/clinic/<slug>.yaml にコピーして使う
+slug: clinic-slug                 # ローマ字。ファイル名と同じにする
+name: 院の名前
+nameKana: いんのなまえ
+kind: 鍼灸院                      # 整体院 / 鍼灸院 / 鍼灸整骨院 / 施術室 / その他
+address:
+  prefSlug: tokyo                 # data/areas.ts にある値だけ（なければ先に追加）
+  citySlug: setagaya
+  line: ○○町1-2-3
+  # building: ビル名・階
+stations:
+  - line: 路線名
+    name: 駅名                    # 「駅」は付けない
+    walkMin: 5
+hours:
+  - days: [月, 火, 水, 金]        # 月 火 水 木 金 土 日 祝
+    open: "10:00"
+    close: "20:00"
+# hoursNote: 定休日や最終受付など（80字以内）
+booking:                          # 1つ以上
+  phone: 03-0000-0000
+  # url: https://
+  # line: https://
+features: []                      # 個室 / 駐車場 / 子連れ相談可 / 訪問施術 / 英語対応 / バリアフリー
+# insurance: 取り扱いあり（医師の同意書が必要）   # 鍼灸の療養費。取り扱いなし も可
+verifiedAt: 2026-01-10

@@ -1,0 +1,28 @@
+# ダミー（架空の院）
+slug: sample-shinkyuin
+name: サンプル鍼灸院
+nameKana: さんぷるしんきゅういん
+kind: 鍼灸院
+address:
+  prefSlug: tokyo
+  citySlug: setagaya
+  line: 架空町1-2-3（架空の住所）
+  building: 見本ビル2階
+stations:
+  - line: 架空線
+    name: 見本町
+    walkMin: 4
+hours:
+  - days: [月, 火, 木, 金]
+    open: "10:00"
+    close: "20:00"
+  - days: [土]
+    open: "09:00"
+    close: "17:00"
+hoursNote: 最終受付は終了の1時間前。水・日・祝は休み
+booking:
+  phone: 000-0000-0001
+  url: https://example.com/sample-shinkyuin
+features: [個室, 子連れ相談可]
+insurance: 取り扱いあり（医師の同意書が必要）
+verifiedAt: 2026-11-01

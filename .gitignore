@@ -1,0 +1,13 @@
+node_modules/
+.next/
+out/
+.vercel/
+*.tsbuildinfo
+next-env.d.ts
+.env*.local
+.DS_Store
+reports/lighthouse/*.html
+
+# 計測結果と参考画像（公開リポジトリには入れない）
+reports/
+/たなごころ 人で選ぶ治療院ガイド.png

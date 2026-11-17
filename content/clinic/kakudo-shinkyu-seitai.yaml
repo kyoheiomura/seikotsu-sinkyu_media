@@ -1,0 +1,26 @@
+# ダミー（架空の院）
+slug: kakudo-shinkyu-seitai
+name: 架空堂 鍼灸整体
+nameKana: かくうどう しんきゅうせいたい
+kind: 施術室
+address:
+  prefSlug: kanagawa
+  citySlug: kawasaki-nakahara
+  line: 仮置町7-8-9（架空の住所）
+stations:
+  - line: 架空線
+    name: 仮置
+    walkMin: 3
+hours:
+  - days: [月, 水, 金]
+    open: "09:00"
+    close: "19:00"
+  - days: [土, 日, 祝]
+    open: "09:00"
+    close: "15:00"
+hoursNote: 火・木は訪問施術の日のため、院での受付は休み
+booking:
+  phone: 000-0000-0003
+features: [訪問施術, バリアフリー, 英語対応]
+insurance: 取り扱いあり（医師の同意書が必要）
+verifiedAt: 2026-11-05

@@ -1,0 +1,29 @@
+# ダミー（架空の院）
+slug: mihon-seitaishitsu
+name: 見本整体室
+nameKana: みほんせいたいしつ
+kind: 整体院
+address:
+  prefSlug: tokyo
+  citySlug: suginami
+  line: 例示通り4-5-6（架空の住所）
+stations:
+  - line: 架空線
+    name: 例示
+    walkMin: 7
+  - line: 仮線
+    name: 試作台
+    walkMin: 12
+hours:
+  - days: [火, 水, 木, 金]
+    open: "11:00"
+    close: "21:00"
+  - days: [土, 日]
+    open: "10:00"
+    close: "18:00"
+hoursNote: 月曜は休み
+booking:
+  url: https://example.com/mihon-seitaishitsu
+  line: https://example.com/mihon-seitaishitsu/line
+features: [個室, 駐車場]
+verifiedAt: 2026-10-20
