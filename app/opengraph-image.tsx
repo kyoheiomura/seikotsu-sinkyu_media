@@ -1,11 +1,11 @@
 import { ImageResponse } from "next/og";
 
 // サイト共通の OGP 画像。ロゴ案C（縦組み・明朝）を使う
-export const alt = "たなごころ｜院ではなく、人で選ぶ整体・鍼灸メディア";
+export const alt = "たなごころ｜数字ではなく、人で選ぶ整体・鍼灸メディア";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
-const TEXT = "たなごころ院ではなく人で選ぶ。整体・鍼灸メディア、";
+const TEXT = "たなごころ数字ではなく人で選ぶ。整体・鍼灸メディア、";
 
 /** 使う文字だけを Google Fonts から取得する（ビルド時に1回） */
 async function loadFont(family: string, weight: number) {
@@ -37,7 +37,7 @@ export default async function OgImage() {
         }}
       >
         <div style={{ display: "flex", flexDirection: "column", fontFamily: "Gothic" }}>
-          <div style={{ fontSize: 84, lineHeight: 1.3, display: "flex" }}>院ではなく、</div>
+          <div style={{ fontSize: 84, lineHeight: 1.3, display: "flex" }}>数字ではなく、</div>
           <div style={{ fontSize: 84, lineHeight: 1.3, display: "flex" }}>
             <span style={{ color: "#b4321e" }}>人</span>
             <span>で選ぶ。</span>

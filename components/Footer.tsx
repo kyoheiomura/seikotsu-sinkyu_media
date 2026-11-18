@@ -29,7 +29,7 @@ export function Footer() {
         <div className="md:col-span-6">
           <Logo size="lg" invert />
           <p className="mt-8 max-w-[26rem] font-serif text-lg leading-[1.9]">
-            院ではなく、人で選ぶ。
+            数字ではなく、人で選ぶ。
             <br />
             星も、ランキングも、ありません。
             <br />
