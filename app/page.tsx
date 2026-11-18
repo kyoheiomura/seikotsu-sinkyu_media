@@ -72,9 +72,9 @@ export default function Home() {
           </span>
           <RevealChars
             as="h1"
-            lines={["院ではなく、", "人で選ぶ。"]}
+            lines={["数字ではなく、", "人で選ぶ。"]}
             accent="人"
-            className="mt-8 font-serif text-[clamp(2.5rem,7.9vw,5rem)] leading-[1.5] font-medium tracking-[0.055em] [text-shadow:0_2px_24px_rgb(9_27_43/0.35)]"
+            className="mt-8 font-serif text-[clamp(2.25rem,7.9vw,5rem)] leading-[1.5] font-medium tracking-[0.055em] [text-shadow:0_2px_24px_rgb(9_27_43/0.35)]"
             style={seq(1)}
           />
           <p className="mt-10 max-w-[32rem] text-[0.9375rem] leading-[2.1] text-white/85 md:text-base" data-reveal="fade" style={seq(7)}>
